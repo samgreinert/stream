@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <title>my name dot com</title>
-    <link href="style.css" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
+
 <body>
-    <p>
-    <!--
-    <img src="me.jpeg" alt="A picture of my face."><br>
-    -->
-    <span style="color:#cc241d">h</span><span style="color:#98971a">e</span><span style="color:#d79921">l</span><span style="color:#458588">l</span><span style="color:#b16286">o</span> <span style="color:#689d6a">'</span><span style="color:#cc241d">n</span><span style="color:#98971a">e</span><span style="color:#d79921">t</span>
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="http://161.35.15.224:8080/hls/samthemaam.m3u8" type="application/x-mpegURL" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
     </p>
-    <p>
-    <a href="mailto:email@mailbox.org" class="blue">email</a><br>
-    <a href="https://github.com" class="purple">github</a><br>
-    <a href="https://keybase.io" class="aqua">keybase</a><br>
-    <a href="https://linkedin.com" class="green">linkedin</a><br>
-    <a href="https://write.as" class="yellow">blog</a>
-    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.8.2/video.js"></script>
 </body>
-</html>
